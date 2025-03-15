@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+body::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #8ee0a4;        /* the colour of the track zone */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #8ee0a4;    /* the slider's colour */
+    border-radius: 20px;       /* the slider's roundness */
+    border: none;
+  }
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    background-color: #37a631;
+    color:  #8ee0a4;
+	align-items: center;
+}
+
+
+img {
+    object-fit: contain;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    border-radius: 25px;
+    background-color: #8ee0a4;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+	border-color: white;
+	position: absolute;
+	left: 50%;
+	/*top: 50%;*/
+	margin-left: -100px;
+	margin-top: 100px; 
+}
+
+h1, h3 {
+    font: menu;
+}
+
+/*
+.container {
+	position: absolute;
+	left: 50%;
+	width: 200px;
+	margin-left: -100px;
+}
+*/

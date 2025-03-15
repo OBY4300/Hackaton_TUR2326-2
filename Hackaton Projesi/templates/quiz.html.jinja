@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<title> Küresel Isınma Bulmacası </title>
+<link rel = "stylesheet" href = "/Users/orhanberk/Desktop/Kodland Derslerim/Visual Studio Klasörü/M7L3-template-tr-main kopyası/static/css/style.css">
+</head>
+<body>
+  <div class = "container">
+    <h1 style = "text-align: center">Küresel Isınma Bulmacası</h1>
+    <form method="post">
+      <h3>{{ question.text }}</h3>
+      <div class="form-group">
+        {% for option in question.options %}
+          <div class="form-check">
+            <input type="radio button" name = "option" class = "from-check-input" id = "option {{ loop.index0 }}" value ="{{ loop.index0 }}" required>
+            <label for="option{{ loop.index0 }}" class = "form-check-label">{{ option }}</label>
+        
+          </div>
+        {% endfor %}
+      </div>
+	  <button type="submit"> Bir sonraki soru -> </button>
+	</form>
+	<p>Question {{ question_index }} of {{ total_questions }}</p>
+  </div>
+
+</body>
+</html>
